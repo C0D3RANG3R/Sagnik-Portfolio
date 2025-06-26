@@ -102,49 +102,13 @@ export class MockdataService {
       tags: ['Angular', 'TypeScript', 'SCSS', 'Responsive Design'],
     },
     {
-      title: 'Developer Portfolio',
+      title: 'Wordle Game',
       description:
-        'A modern, responsive portfolio website built with Angular, showcasing my skills, experience, and recent projects. Features a clean UI, mobile-first design, and easy navigation.',
-      url: 'https://github.com/C0D3RANG3R/Sagnik-Portfolio',
-      demo: 'https://sagnik-portfolio-five.vercel.app/',
-      screenshot: 'assets/portfolio-screenshot.png',
-      tags: ['Angular', 'TypeScript', 'SCSS', 'Responsive Design'],
-    },
-    {
-      title: 'Developer Portfolio',
-      description:
-        'A modern, responsive portfolio website built with Angular, showcasing my skills, experience, and recent projects. Features a clean UI, mobile-first design, and easy navigation.',
-      url: 'https://github.com/C0D3RANG3R/Sagnik-Portfolio',
-      demo: 'https://sagnik-portfolio-five.vercel.app/',
-      screenshot: 'assets/portfolio-screenshot.png',
-      tags: ['Angular', 'TypeScript', 'SCSS', 'Responsive Design'],
-    },
-    {
-      title: 'Developer Portfolio',
-      description:
-        'A modern, responsive portfolio website built with Angular, showcasing my skills, experience, and recent projects. Features a clean UI, mobile-first design, and easy navigation.',
-      url: 'https://github.com/C0D3RANG3R/Sagnik-Portfolio',
-      demo: 'https://sagnik-portfolio-five.vercel.app/',
-      screenshot: 'assets/portfolio-screenshot.png',
-      tags: ['Angular', 'TypeScript', 'SCSS', 'Responsive Design'],
-    },
-    {
-      title: 'Developer Portfolio',
-      description:
-        'A modern, responsive portfolio website built with Angular, showcasing my skills, experience, and recent projects. Features a clean UI, mobile-first design, and easy navigation.',
-      url: 'https://github.com/C0D3RANG3R/Sagnik-Portfolio',
-      demo: 'https://sagnik-portfolio-five.vercel.app/',
-      screenshot: 'assets/portfolio-screenshot.png',
-      tags: ['Angular', 'TypeScript', 'SCSS', 'Responsive Design'],
-    },
-    {
-      title: 'Developer Portfolio',
-      description:
-        'A modern, responsive portfolio website built with Angular, showcasing my skills, experience, and recent projects. Features a clean UI, mobile-first design, and easy navigation.',
-      url: 'https://github.com/C0D3RANG3R/Sagnik-Portfolio',
-      demo: 'https://sagnik-portfolio-five.vercel.app/',
-      screenshot: 'assets/portfolio-screenshot.png',
-      tags: ['Angular', 'TypeScript', 'SCSS', 'Responsive Design'],
+        'A popular word-guessing game clone built with HTML, CSS, and JavaScript. Features a simple UI, interactive gameplay, and local storage to save game state. Players have six attempts to guess a five-letter word, with feedback provided for each guess.',
+      url: 'https://github.com/C0D3RANG3R/Wordle-Clone',
+      demo: 'https://wordle-clone-gray.vercel.app/',
+      screenshot: 'assets/wordle-screenshot.png',
+      tags: ['HTML', 'CSS', 'JavaScript', 'Toastify.js'],
     },
     ]
   }
