@@ -1,0 +1,30 @@
+.card {
+    background-color: var(--background-primary);
+    transition: transform 0.3s cubic-bezier(0.23, 1, 0.32, 1), box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 8px 40px 0 rgba(229, 229, 229, 0.15), 0 2px 8px 0 rgba(0,0,0,0.12);
+}
+
+.card-footer {
+    background-color: transparent;
+    border: none;
+}
+
+.card-link {
+    color: var(--background-tertiary);
+    text-decoration: none;
+    transition: color 0.2s;
+
+    &:hover {
+        color: var(--background-alternative3);
+        text-decoration: underline;
+    }
+}
+
+.type {
+    color: #198754;
+    font-size: 1rem;
+}

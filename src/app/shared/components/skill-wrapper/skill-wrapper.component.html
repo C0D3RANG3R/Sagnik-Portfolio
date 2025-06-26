@@ -1,0 +1,10 @@
+<div
+  *ngFor="let item of data"
+  [ngClass]="isFirstItem(item) ? '' : 'mt-4'"
+>
+  <h4 class="text-uppercase">{{ item.title }}</h4>
+  <app-tag-item
+    *ngFor="let tag of item.items"
+    [tag]="tag"
+  ></app-tag-item>
+</div>

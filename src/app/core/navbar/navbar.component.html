@@ -1,0 +1,83 @@
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container py-2">
+    <div class="col-6 col-sm-2">
+      <a class="navbar-brand text-uppercase" href="#">SAGNIK MUKHERJEE</a>
+    </div>
+
+    <!-- Mobile CV Download Button -->
+    <a
+      href="assets/Sagnik_Mukherjee_CV.pdf"
+      class="btn btn-primary d-lg-none me-2"
+      download
+      target="_blank"
+      style="font-size: 0.95rem;"
+    >
+      Download My CV
+    </a>
+
+    <!-- Navbar Toggler -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      (click)="toggleMenuItems()"
+      [attr.aria-expanded]="showMenuItems"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-dark navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar Menu Items -->
+    <div
+      class="collapse navbar-collapse"
+      [ngClass]="{ show: showMenuItems, 'mobile-menu': true }"
+    >
+      <!-- Close Button for Mobile -->
+      <button
+        class="navbar-close d-lg-none"
+        type="button"
+        aria-label="Close navigation"
+        (click)="toggleMenuItems()"
+      >
+        &times;
+      </button>
+
+      <ul class="navbar-nav ms-auto text-center">
+        <li
+          class="nav-item"
+          *ngFor="let link of [
+            { fragment: 'home', label: 'Home' },
+            { fragment: 'about', label: 'About' },
+            { fragment: 'experience', label: 'Experience' },
+            { fragment: 'recent', label: 'Recent Work' }
+          ]"
+        >
+          <a
+            class="nav-link"
+            routerLink="."
+            [fragment]="link.fragment"
+            (click)="toggleMenuItems()"
+          >
+            {{ link.label }}
+          </a>
+        </li>
+        <li>
+          <a
+            href="assets/Sagnik_Mukherjee_CV.pdf"
+            class="nav-link btn btn-primary"
+            download
+            target="_blank"
+          >
+            Download My CV
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Backdrop for Mobile Menu -->
+    <div
+      class="menu-backdrop"
+      *ngIf="showMenuItems"
+      (click)="toggleMenuItems()"
+    ></div>
+  </div>
+</nav>

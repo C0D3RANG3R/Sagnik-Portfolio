@@ -1,0 +1,97 @@
+@import "bootstrap/scss/bootstrap";
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,600,700,800);
+
+body{
+    --background-primary: #121212;
+    --background-secondary: #2A2A2A;
+    --background-tertiary: #00ADB5;
+    --background-alternative: #BF3E21;
+    --background-alternative2: #BF533B;
+    --background-alternative3: #733224;
+    --font-color: #fff;
+
+    color: var(--font-color);
+}
+
+.btn-primary{
+    background-color: var(--background-alternative);
+    border-color: var(--background-alternative);
+}
+
+.btn-primary:hover{
+    background-color: var(--background-alternative2);
+    border-color: var(--background-alternative2);
+}
+
+.btn-secondary{
+    background-color: var(--background-secondary);
+    border-color: var(--background-secondary);
+    color: var(--background-tertiary);
+}
+
+.btn-secondary:hover{
+    background-color: var(--background-primary);
+    border-color: var(--background-primary);
+    color: var(--background-tertiary);
+}
+
+h1{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+}
+
+h3{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+h4{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+
+h5{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+}
+
+
+a{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+p{
+    font-size: 18px;
+    color: var(--font-color);
+}
+
+p.content{
+    text-align: justify;
+}
+
+div.row{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+$sizes: 10, 20, 30, 40, 50, 60, 70, 80, 90;
+@for $i from 1 through length($sizes){
+    $value: nth($sizes, $i);
+    $viewheight: 1vh * $value;
+    .min-vh-#{$value} { 
+        min-height: $viewheight!important;
+        }
+}
+
+// Adapted from https://codepen.io/szpakoli/pen/zYKqoJ
+hr.header{
+  
+    border: 0;
+    height: 2px;
+    width: 10%;
+    position: relative;
+    margin: 30px auto;
+    background: var(--background-alternative);
+  }

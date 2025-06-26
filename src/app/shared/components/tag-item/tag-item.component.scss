@@ -1,0 +1,61 @@
+// Adapted from here: https://codepen.io/Jab2870/pen/mEKgBX
+
+div.brackets {
+  text-decoration: none;
+  font-family: Helvetica;
+  font-weight: 600;
+  vertical-align: top;
+  transition: color 0.2s ease;
+  background-color: var(--background-tertiary);
+  color: var(--background-secondary);
+  border-radius: 0.25rem;
+}
+
+.brackets {
+  &::before,
+  &::after {
+    opacity: 0;
+    transition: opacity 0.2s ease, transform 0.3s ease;
+    position: relative;
+    display: inline-block;
+  }
+
+  &::before {
+    content: "[";
+    transform: translateX(20px);
+    margin-right: 0.2em;
+  }
+
+  &::after {
+    content: "]";
+    transform: translateX(-20px);
+    margin-left: 0.2em;
+  }
+
+  &:hover {
+    color: #ececec;
+
+    &::before,
+    &::after {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  &.brackets2 {
+    &::before {
+      transform: translateX(-20px);
+    }
+
+    &::after {
+      transform: translateX(20px);
+    }
+
+    &:hover {
+      &::before,
+      &::after {
+        transform: translateX(0);
+      }
+    }
+  }
+}
