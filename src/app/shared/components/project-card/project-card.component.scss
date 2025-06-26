@@ -13,6 +13,12 @@
     flex-direction: column;
 }
 
+.card-deck {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .card:hover {
     transform: translateY(-12px) scale(1.04);
     box-shadow: 0 20px 60px 0 rgba(123, 47, 242, 0.33);

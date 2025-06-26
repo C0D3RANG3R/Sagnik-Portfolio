@@ -101,6 +101,51 @@ export class MockdataService {
       screenshot: 'assets/portfolio-screenshot.png',
       tags: ['Angular', 'TypeScript', 'SCSS', 'Responsive Design'],
     },
+    {
+      title: 'Developer Portfolio',
+      description:
+        'A modern, responsive portfolio website built with Angular, showcasing my skills, experience, and recent projects. Features a clean UI, mobile-first design, and easy navigation.',
+      url: 'https://github.com/C0D3RANG3R/Sagnik-Portfolio',
+      demo: 'https://sagnik-portfolio-five.vercel.app/',
+      screenshot: 'assets/portfolio-screenshot.png',
+      tags: ['Angular', 'TypeScript', 'SCSS', 'Responsive Design'],
+    },
+    {
+      title: 'Developer Portfolio',
+      description:
+        'A modern, responsive portfolio website built with Angular, showcasing my skills, experience, and recent projects. Features a clean UI, mobile-first design, and easy navigation.',
+      url: 'https://github.com/C0D3RANG3R/Sagnik-Portfolio',
+      demo: 'https://sagnik-portfolio-five.vercel.app/',
+      screenshot: 'assets/portfolio-screenshot.png',
+      tags: ['Angular', 'TypeScript', 'SCSS', 'Responsive Design'],
+    },
+    {
+      title: 'Developer Portfolio',
+      description:
+        'A modern, responsive portfolio website built with Angular, showcasing my skills, experience, and recent projects. Features a clean UI, mobile-first design, and easy navigation.',
+      url: 'https://github.com/C0D3RANG3R/Sagnik-Portfolio',
+      demo: 'https://sagnik-portfolio-five.vercel.app/',
+      screenshot: 'assets/portfolio-screenshot.png',
+      tags: ['Angular', 'TypeScript', 'SCSS', 'Responsive Design'],
+    },
+    {
+      title: 'Developer Portfolio',
+      description:
+        'A modern, responsive portfolio website built with Angular, showcasing my skills, experience, and recent projects. Features a clean UI, mobile-first design, and easy navigation.',
+      url: 'https://github.com/C0D3RANG3R/Sagnik-Portfolio',
+      demo: 'https://sagnik-portfolio-five.vercel.app/',
+      screenshot: 'assets/portfolio-screenshot.png',
+      tags: ['Angular', 'TypeScript', 'SCSS', 'Responsive Design'],
+    },
+    {
+      title: 'Developer Portfolio',
+      description:
+        'A modern, responsive portfolio website built with Angular, showcasing my skills, experience, and recent projects. Features a clean UI, mobile-first design, and easy navigation.',
+      url: 'https://github.com/C0D3RANG3R/Sagnik-Portfolio',
+      demo: 'https://sagnik-portfolio-five.vercel.app/',
+      screenshot: 'assets/portfolio-screenshot.png',
+      tags: ['Angular', 'TypeScript', 'SCSS', 'Responsive Design'],
+    },
     ]
   }
 }
