@@ -11,7 +11,7 @@ export class ExperienceComponent implements OnInit {
   experienceItems: IExperienceItem[] = [];
   educationItems: IExperienceItem[] = [];
 
-  constructor(private service: MockdataService) {}
+  constructor(private readonly service: MockdataService) {}
 
   ngOnInit(): void {
     this.experienceItems = this.service.getExperienceItems();

@@ -1,4 +1,4 @@
 export interface ISkillItem {
-    title: string;
-    items: string[];
+  title: string;
+  items: string[];
 }

@@ -6,6 +6,6 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./tag-item.component.scss'],
 })
 export class TagItemComponent {
-  @Input() tag: string = '';
-  @Input() spacing: string = 'p-2 me-3 mb-3';
+  @Input() tag = '';
+  @Input() spacing = 'p-2 me-3 mb-3';
 }

@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { IExperienceItem } from '../../dtos/experience-item';
 
 @Component({
@@ -6,11 +6,7 @@ import { IExperienceItem } from '../../dtos/experience-item';
   templateUrl: './experience-item.component.html',
   styleUrls: ['./experience-item.component.scss'],
 })
-export class ExperienceItemComponent implements OnInit {
-  @Input() item: IExperienceItem = {} as IExperienceItem;
+export class ExperienceItemComponent {
+  @Input() item!: IExperienceItem;
   @Input() alternativeColor = false;
-
-  constructor() {}
-
-  ngOnInit(): void {}
 }

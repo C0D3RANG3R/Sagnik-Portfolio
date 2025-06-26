@@ -10,7 +10,7 @@ import { MockdataService } from 'src/app/shared/services/mockdata.service';
 export class AboutComponent implements OnInit {
   skills: ISkillItem[] = [];
 
-  constructor(private service: MockdataService) {}
+  constructor(private readonly service: MockdataService) {}
 
   ngOnInit(): void {
     this.skills = this.service.getSkillitems();

@@ -1,14 +1,10 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-portfolio-section',
   templateUrl: './portfolio-section.component.html',
   styleUrls: ['./portfolio-section.component.scss'],
 })
-export class PortfolioSectionComponent implements OnInit {
+export class PortfolioSectionComponent {
   @Input() alternativeColor = false;
-
-  constructor() {}
-
-  ngOnInit(): void {}
 }

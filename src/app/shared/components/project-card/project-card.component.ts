@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 interface Project {
   title: string;
@@ -14,10 +14,6 @@ interface Project {
   templateUrl: './project-card.component.html',
   styleUrls: ['./project-card.component.scss'],
 })
-export class ProjectCardComponent implements OnInit {
+export class ProjectCardComponent {
   @Input() projects: Project[] = [];
-
-  constructor() {}
-
-  ngOnInit(): void {}
 }

@@ -12,9 +12,9 @@
         <div class="card-title">{{ project.title }}</div>
         <div class="card-description">{{ project.description }}</div>
         <div class="skills-list">
-          <span class="skill-tag" *ngFor="let tag of project.tags">{{
-            tag
-          }}</span>
+          <span class="skill-tag" *ngFor="let tag of project.tags">
+            {{ tag }}
+          </span>
         </div>
         <div class="project-btn-group">
           <a
