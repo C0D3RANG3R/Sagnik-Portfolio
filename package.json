@@ -18,7 +18,7 @@
     "@angular/platform-browser": "^17.3.12",
     "@angular/platform-browser-dynamic": "^17.3.12",
     "@angular/router": "^17.3.12",
-    "@ng-bootstrap/ng-bootstrap": "^15.1.0",
+    "@ng-bootstrap/ng-bootstrap": "^16.0.0",
     "@octokit/rest": "^20.0.2",
     "bootstrap": "^5.3.2",
     "compass-mixins": "^0.12.12",
