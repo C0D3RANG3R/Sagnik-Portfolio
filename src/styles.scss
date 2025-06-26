@@ -3,13 +3,13 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,600,700,800);
 
 body{
-    --background-primary: #121212;
-    --background-secondary: #2A2A2A;
-    --background-tertiary: #00ADB5;
-    --background-alternative: #BF3E21;
-    --background-alternative2: #BF533B;
-    --background-alternative3: #733224;
-    --font-color: #fff;
+     --background-primary: #1B112A;       /* Deep Purple Night */
+  --background-secondary: #2E1A47;     /* Card/section backgrounds */
+  --background-tertiary: #A66DD4;      /* Vibrant Lilac – Active/highlight */
+  --background-alternative: #F67280;   /* Coral Pink – Button, CTA */
+  --background-alternative2: #6C5B7B;  /* Hover or soft accents */
+  --background-alternative3: #3D2C4C;  /* Footer or divider */
+  --font-color: #F0EFF4;               /* Light lavender text */
 
     color: var(--font-color);
 }

@@ -5,6 +5,7 @@ interface Project {
   description: string;
   url: string;
   demo?: string;
+  screenshot: string;
   tags: string[];
 }
 

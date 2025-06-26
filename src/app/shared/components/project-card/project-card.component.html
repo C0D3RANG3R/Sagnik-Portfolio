@@ -1,39 +1,40 @@
 <div class="row">
-  <div
-    class="col-md-4 col-12 mt-3"
-    *ngFor="let project of projects"
-  >
-    <div class="card h-100">
-      <div class="card-body">
-        <h5 class="card-title mb-2">
-          <a
-            [href]="project.url"
-            class="card-link"
-            target="_blank"
-          >
-            {{ project.title }}
-          </a>
-        </h5>
-        <p class="card-text mb-3">
-          {{ project.description }}
-        </p>
-        <div class="mb-2">
-          <app-tag-item
-            *ngFor="let tag of project.tags"
-            [tag]="tag"
-            [spacing]="'p-1 mb-1 me-1'"
-          ></app-tag-item>
-        </div>
+  <div class="col-md-4 col-12 mt-3" *ngFor="let project of projects">
+    <div class="card">
+      <div class="card-image-wrapper">
+        <img
+          class="card-img-top"
+          [src]="project.screenshot"
+          alt="{{ project.title }}"
+        />
       </div>
-      <div class="card-footer border-0 bg-transparent">
-        <a
-          *ngIf="project.demo"
-          [href]="project.demo"
-          target="_blank"
-          class="btn btn-primary"
-        >
-          Live Demo
-        </a>
+      <div class="card-content">
+        <div class="card-title">{{ project.title }}</div>
+        <div class="card-description">{{ project.description }}</div>
+        <div class="skills-list">
+          <span class="skill-tag" *ngFor="let tag of project.tags">{{
+            tag
+          }}</span>
+        </div>
+        <div class="project-btn-group">
+          <a
+            class="project-btn"
+            *ngIf="project.demo"
+            [href]="project.demo"
+            target="_blank"
+            title="View Live Demo"
+          >
+            <i class="fa fa-play"></i> Live Demo
+          </a>
+          <a
+            class="project-btn"
+            [href]="project.url"
+            target="_blank"
+            title="View Source Code"
+          >
+            <i class="fa fa-github"></i> View Source
+          </a>
+        </div>
       </div>
     </div>
   </div>
