@@ -22,31 +22,6 @@ p.bubble {
   }
 }
 
-.circle {
-  width: 120px;
-  height: 120px;
-  padding: 15px;
-  border-radius: 50%;
-  margin: 0 auto;
-  text-align: center;
-  background: lighten(#bf533b, 20%);
-}
-
-.circle2 {
-  width: 90px;
-  height: 90px;
-  padding: 20px 0;
-  border-radius: 50%;
-  color: var(--background-secondary);
-  text-align: center;
-  background: var(--background-alternative);
-  transition: all 0.2s ease-in-out;
-
-  &:hover {
-    transform: scale(1.05);
-  }
-}
-
 .typing-background {
   color: var(--background-alternative);
 }
@@ -55,4 +30,33 @@ a {
   color: var(--background-secondary);
   text-decoration: none;
   font-family: "Courier New", monospace;
+}
+
+.cv-btn-container {
+  display: flex;
+  align-items: center;
+}
+
+.cv-btn {
+  background: linear-gradient(
+    90deg,
+    var(--background-tertiary) 0%,
+    var(--background-alternative) 100%
+  );
+  color: var(--background-primary);
+  padding: 0.75rem 2rem;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.cv-btn:hover, .cv-btn:focus {
+  background: linear-gradient(
+    90deg,
+    var(--background-alternative) 0%,
+    var(--background-tertiary) 100%
+  );
+  color: var(--color-primary);
+  transform: translateY(-2px) scale(1.03);
 }
