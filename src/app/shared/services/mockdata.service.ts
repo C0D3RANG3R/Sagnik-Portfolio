@@ -84,7 +84,7 @@ export class MockdataService {
         companyName: 'Methodist School',
         timeRange: 'Percentage: 85.5 | March 2018 - April 2019',
         description:
-          'Completed higher secondary education with a focus on Physics, Chemistr, Mathematics, and Computer Science. Built a strong foundation in analytical thinking and problem-solving, which later fueled my interest in software development.',
+          'Completed higher secondary education with a focus on Physics, Chemistry, and Mathematics. Built a strong foundation in analytical thinking and problem-solving, which later fueled my interest in software development.',
         place: 'Kolkata, India',
       },
     ];
@@ -109,6 +109,15 @@ export class MockdataService {
       demo: 'https://wordle-clone-gray.vercel.app/',
       screenshot: 'assets/wordle-screenshot.png',
       tags: ['HTML', 'CSS', 'JavaScript', 'Toastify.js'],
+    },
+    {
+      title: 'Tic Tac Toe',
+      description:
+        'A classic Tic Tac Toe game built with HTML, CSS, and JavaScript. Feature a simple UI. Players can play against each other or against a basic AI having three difficulty levels.',
+      url: 'https://github.com/C0D3RANG3R/JavaScript_Tic-Tac-Clone',
+      demo: 'http://java-script-tic-tac-clone.vercel.app/',
+      screenshot: 'assets/tictactoe-screenshot.png',
+      tags: ['HTML', 'CSS', 'JavaScript'],
     },
     ]
   }
